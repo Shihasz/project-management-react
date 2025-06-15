@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-blink-border: blink-border 1s 3s alternate forwards;
+  @keyframes blink-border {
+    0% {
+      border-color: red;
+    }
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: red;
+    }
+  }
+}
